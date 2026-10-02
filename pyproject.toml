@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leadscope-momentum"
+version = "0.1.0"
+description = "LeadScope account momentum module (library, SQLite-backed)"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["leadscope_momentum*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
